@@ -1,15 +1,19 @@
 {
   "name": "disdata",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-docs": "documentation build index.js -f html --github -o docs && documentation readme index.js --section=Docs"
   },
   "keywords": [],
   "author": "andronedev",
   "license": "ISC",
   "dependencies": {
     "discord.js-light": "^3.5.11"
+  },
+  "devDependencies": {
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
   }
 }
